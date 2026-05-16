@@ -22,7 +22,7 @@ jobs:
       - name: Log in to Bunny Container Registry
         uses: docker/login-action@v3
         with:
-          registry: cr.bunnycdn.com
+          registry: storage.bunnycdn.com
           username: ${{ secrets.BUNNY_STORAGE_ZONE }}
           password: ${{ secrets.BUNNY_API_KEY }}
 
