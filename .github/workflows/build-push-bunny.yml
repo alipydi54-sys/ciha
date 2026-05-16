@@ -32,8 +32,8 @@ jobs:
           context: .
           push: true
           tags: |
-            cr.bunnycdn.com/${{ secrets.BUNNY_STORAGE_ZONE }}/my-app:latest
-            cr.bunnycdn.com/${{ secrets.BUNNY_STORAGE_ZONE }}/my-app:${{ github.sha }}
+            storage.bunnycdn.com/${{ secrets.BUNNY_STORAGE_ZONE }}/my-app:latest
+            storage.bunnycdn.com/${{ secrets.BUNNY_STORAGE_ZONE }}/my-app:${{ github.sha }}
 
       - name: Image pushed successfully
         run: |
